@@ -699,7 +699,7 @@
 // Invert the stepper direction. Change (or reverse the motor connector) if an axis goes the wrong way.
 #define INVERT_X_DIR false
 #define INVERT_Y_DIR false
-#define INVERT_Z_DIR true
+#define INVERT_Z_DIR false
 
 // @section extruder
 
@@ -727,11 +727,11 @@
 // @section machine
 
 // Travel limits after homing (units are in mm)
-#define X_MAX_POS     220
+#define X_MAX_POS     150
 #define X_MIN_POS     0
-#define Y_MAX_POS     220
+#define Y_MAX_POS     158
 #define Y_MIN_POS     0
-#define Z_MAX_POS     250
+#define Z_MAX_POS     145
 #define Z_MIN_POS     0
 
 
@@ -874,13 +874,13 @@
 // @section homing
 
 // The center of the bed is at (X=0, Y=0)
-//#define BED_CENTER_AT_0_0
+#define BED_CENTER_AT_75_75
 
 // Manually set the home position. Leave these undefined for automatic settings.
 // For DELTA this is the top-center of the Cartesian print volume.
-//#define MANUAL_X_HOME_POS 0
-//#define MANUAL_Y_HOME_POS 0
-//#define MANUAL_Z_HOME_POS 0 // Distance between the nozzle to printbed after homing
+#define MANUAL_X_HOME_POS 0
+#define MANUAL_Y_HOME_POS -9
+#define MANUAL_Z_HOME_POS 0 // Distance between the nozzle to printbed after homing
 
 // Use "Z Safe Homing" to avoid homing with a Z probe outside the bed area.
 //
